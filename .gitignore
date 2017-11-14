@@ -1,0 +1,4 @@
+build/
+logger.pro.user
+logger.pro.user.*
+copyfile.bat

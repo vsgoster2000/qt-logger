@@ -3,7 +3,6 @@
 # Project created by QtCreator 2017-11-13T16:27:15
 #
 #-------------------------------------------------
-include(../logger_global.pri)
 QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -12,6 +11,9 @@ TARGET = examples
 TEMPLATE = app
 CONFIG += c++11
 INCLUDEPATH += D:\software\dev\qt\platform\include\platform
+
+PLATFORM_LOGGER_LIB_NAME = $$qtLibraryTarget(platform_logger)
+PLATFORM_LOGGER_LIB_DIR=D:\software\dev\qt\platform\lib
 
 LIBS += -L$$PLATFORM_LOGGER_LIB_DIR -l$$PLATFORM_LOGGER_LIB_NAME
 # The following define makes your compiler emit warnings if you use

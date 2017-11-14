@@ -7,11 +7,14 @@ include(../logger_global.pri)
 
 QT       -= gui
 
-TARGET = $$PLATFORM_LOGGER_LIB_NAME
+#TEMPLATE += fakelib
+TARGET = $$qtLibraryTarget(platform_logger)
+#TEMPLATE -= fakelib
+
 TEMPLATE = lib
 CONFIG += staticlib c++11 debug_and_release build_all
 
-DESTDIR = $$PLATFORM_LOGGER_LIB_DIR
+DESTDIR = D:\software\dev\qt\platform\lib
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked as deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
